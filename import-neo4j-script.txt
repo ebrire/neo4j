@@ -1,0 +1,1 @@
+load csv with headers from "https://raw.githubusercontent.com/ebrire/test/master/dummy-neo4j.csv" as line return line
