@@ -1,4 +1,3 @@
-name,source
 fhfa_edc,qry
 ln_fhfa_expd_dflt_cost_rt,ln_dly_calc_fact
 ce_catg_typ,dl_grp_dim
@@ -10,4 +9,3 @@ ce_loss_mul,qry
 ce_edc_hc,qry
 base_edc,qry
 Non_MI_Multiplier,ln_dly_calc_fact.ln_calc_mlpr_fctr
-edc_mi_loss,ln_grid_val_fact.ln_mi_mlpr_fctr
