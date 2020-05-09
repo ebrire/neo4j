@@ -1,0 +1,11 @@
+source,target
+fhfa_edc,ln_fhfa_expd_dflt_cost_rt
+fhfa_edc,ce_catg_typ
+fhfa_edc,edc_with_mi_haircut
+edc_with_mi_haircut,ce_loss_mul
+edc_with_mi_haircut,ce_edc_hc
+edc_with_mi_haircut,edc_after_mul
+edc_with_mi_haircut,edc_mi_loss
+edc_with_mi_haircut,edc_hc_final
+edc_after_mul,Non_MI_Multiplier
+edc_after_mul,base_edc
