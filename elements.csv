@@ -2,8 +2,8 @@ name,source
 fhfa_edc,qry
 ln_fhfa_expd_dflt_cost_rt,ln_dly_calc_fact
 ce_catg_typ,dl_grp_dim
-edc_with_mi_haircut,"edc_after_mul * (1-((1-edc_mi_loss) * (1-edc_hc_final)))"
-edc_after_mul,"base_edc * Non_MI_Multiplier"
+edc_with_mi_haircut,"qry=edc_after_mul * (1-((1-edc_mi_loss) * (1-edc_hc_final)))"
+edc_after_mul,"qry=base_edc * Non_MI_Multiplier"
 edc_mi_loss,ln_grid_val_fact.ln_mi_mlpr_fctr
 edc_hc_final,ln_dly_calc_fact.ln_expd_dflt_cost_hrct_pct
 ce_loss_mul,qry
