@@ -18,3 +18,8 @@ Allocation_PCT,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
 Reinsurer_Rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating' "
 Base_Case_MI_Haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier' "
 edc_hc,"qry=sumproduct of (AGMT_PRTY_RSK_ALCN_PCT, BASE_MI_HC"
+ln_mi_co_prty_role_id,ln_dim
+ln_aqsn_prd,ln_dim
+Ratings_Assessments_MI_FNMA,"qry='MortgageInsuranceCompanyIdentifier', 'ParentChildMortgageInsuranceCompanyMapping'"
+MI_Company_Name_EDC_HC,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode', FHFAMIRating'"
+mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 'BaseCaseMIHaircutRatingsMultiplier'"
