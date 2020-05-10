@@ -10,16 +10,16 @@ ce_loss_mul,qry
 ce_edc_hc,qry
 base_edc,qry
 base_edc_grid,"qry='PortfolioBorrowerGroupOriginationMinimumCreditScoreCategoryType' , 'PortfolioLoanOriginationLTVCategoryType' , 'EDCBaseGridMultiplier' "
-Non_MI_Multiplier,"ln_dly_calc_fact.ln_calc_mlpr_fctr"
+non_mi_multiplier,"ln_dly_calc_fact.ln_calc_mlpr_fctr"
 edc_hc_epmi,qry
 deal_id,dl_grp_sbu_prty_fact.deal_id
-Reinsurer_Name,dl_grp_sbu_prty_fact.prty_sub_bus_unt_full_nme
-Allocation_PCT,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
-Reinsurer_Rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating' "
-Base_Case_MI_Haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier' "
+reinsurer_name,dl_grp_sbu_prty_fact.prty_sub_bus_unt_full_nme
+allocation_pct,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
+reinsurer_rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating' "
+base_case_mi_haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier' "
 edc_hc,"qry=sumproduct of (AGMT_PRTY_RSK_ALCN_PCT, BASE_MI_HC"
 ln_mi_co_prty_role_id,ln_dim
 ln_aqsn_prd,ln_dim
-Ratings_Assessments_MI_FNMA,"qry='MortgageInsuranceCompanyIdentifier', 'ParentChildMortgageInsuranceCompanyMapping'"
-MI_Company_Name_EDC_HC,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode', FHFAMIRating'"
+ratings_assessments_mi_fnma,"qry='MortgageInsuranceCompanyIdentifier', 'ParentChildMortgageInsuranceCompanyMapping'"
+mi_company_name_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode', FHFAMIRating'"
 mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 'BaseCaseMIHaircutRatingsMultiplier'"
