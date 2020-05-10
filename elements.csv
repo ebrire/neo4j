@@ -4,13 +4,17 @@ ln_fhfa_expd_dflt_cost_rt,ln_dly_calc_fact
 ce_catg_typ,dl_grp_dim
 edc_with_mi_haircut,"qry=edc_after_mul * (1-((1-edc_mi_loss) * (1-edc_hc_final)))"
 edc_after_mul,"qry=base_edc * Non_MI_Multiplier"
-edc_mi_loss,ln_grid_val_fact.ln_mi_mlpr_fctr
-edc_hc_final,ln_dly_calc_fact.ln_expd_dflt_cost_hrct_pct
+edc_mi_loss,"ln_grid_val_fact.ln_mi_mlpr_fctr"
+edc_hc_final,"ln_dly_calc_fact.ln_expd_dflt_cost_hrct_pct"
 ce_loss_mul,qry
 ce_edc_hc,qry
 base_edc,qry
-Non_MI_Multiplier,ln_dly_calc_fact.ln_calc_mlpr_fctr
+base_edc_grid,"qry='PortfolioBorrowerGroupOriginationMinimumCreditScoreCategoryType' , 'PortfolioLoanOriginationLTVCategoryType' , 'EDCBaseGridMultiplier' "
+Non_MI_Multiplier,"ln_dly_calc_fact.ln_calc_mlpr_fctr"
 edc_hc_epmi,qry
 deal_id,dl_grp_sbu_prty_fact.deal_id
 Reinsurer_Name,dl_grp_sbu_prty_fact.prty_sub_bus_unt_full_nme
-Allocation_Percentage,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
+Allocation_PCT,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
+Reinsurer_Rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating' "
+Base_Case_MI_Haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier' "
+edc_hc,"qry=sumproduct of (AGMT_PRTY_RSK_ALCN_PCT, BASE_MI_HC"
