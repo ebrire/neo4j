@@ -9,7 +9,9 @@ edc_with_mi_haircut,edc_mi_loss
 edc_with_mi_haircut,edc_hc_final
 edc_hc_final,edc_hc_epmi 
 edc_hc_epmi,Reinsurer_Name
-edc_hc_epmi,Allocation_Percentage
+edc_hc_epmi,Allocation_PCT
 edc_hc_epmi,deal_id
 edc_after_mul,Non_MI_Multiplier
 edc_after_mul,base_edc
+base_edc,base_edc_grid
+Reinsurer_Name,Reinsurer_Rating
