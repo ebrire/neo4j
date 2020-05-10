@@ -11,6 +11,7 @@ edc_hc_final,edc_hc_epmi
 edc_hc_epmi,Reinsurer_Name
 edc_hc_epmi,Allocation_PCT
 edc_hc_epmi,deal_id
+edc_hc_epmi,edc_hc
 edc_after_mul,Non_MI_Multiplier
 edc_after_mul,base_edc
 base_edc,base_edc_grid
