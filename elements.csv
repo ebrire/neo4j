@@ -26,8 +26,8 @@ ln_aqsn_prd,ln_dim
 ratings_assessments_mi_fnma,"qry='MortgageInsuranceCompanyIdentifier', 'ParentChildMortgageInsuranceCompanyMapping'"
 mi_company_name_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode', FHFAMIRating'"
 mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 'BaseCaseMIHaircutRatingsMultiplier'"
-efctv_crt_term_fctr_amort_term,qry
-efctv_crt_term_fctr_loan_age,"qry=efctv_crt_term_fctr_amort_term with MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
-efctv_crt_term_fctr_ce_term,"qry=efctv_crt_term_fctr_loan_age but uses other query"
+amort_term,qry
+loan_age,"qry=efctv_crt_term_fctr_amort_term with MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
+ce_term,"qry=efctv_crt_term_fctr_loan_age but uses other query"
 ce_countr_prty_rtg_val,qry
 edc_adj_ratio,qry
