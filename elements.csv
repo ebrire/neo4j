@@ -24,5 +24,5 @@ ratings_assessments_mi_fnma,"qry='MortgageInsuranceCompanyIdentifier', 'ParentCh
 mi_company_name_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode', FHFAMIRating'"
 mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 'BaseCaseMIHaircutRatingsMultiplier'"
 effective_crt_term_factor_amort_term,qry
-effective_crt_term_factor_loan_age,"qry=effective_crt_term_factor_amort_term, but MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)" 
+effective_crt_term_factor_loan_age,"qry=effective_crt_term_factor_amort_term, but MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
 effective_crt_term_factor_ce_term,"qry=effective_crt_term_factor_loan_age but uses other query"
