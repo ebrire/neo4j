@@ -21,11 +21,11 @@ edc_after_mul,non_mi_multiplier
 edc_after_mul,base_edc
 base_edc,base_edc_grid
 reinsurer_name,reinsurer_rating
+reinsurer_name,base_case_mi_haircuts
 edc_hc,ln_mi_co_prty_role_id
 edc_hc,ln_aqsn_prd
 edc_hc,mi_rating_edc_hc
 mi_rating_edc_hc,mi_company_name_edc_hc
-base_case_mi_haircuts,reinsurer_rating
 edc_hc,ratings_assessments_mi_fnma
 ce_loss_mul,amort_term
 ce_loss_mul,loan_age
