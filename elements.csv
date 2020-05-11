@@ -15,8 +15,8 @@ edc_hc_epmi,qry
 deal_id,dl_grp_sbu_prty_fact.deal_id
 reinsurer_name,dl_grp_sbu_prty_fact.prty_sub_bus_unt_full_nme
 allocation_pct,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
-reinsurer_rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating' "
-base_case_mi_haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier' "
+reinsurer_rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating'"
+base_case_mi_haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier'"
 edc_hc,"qry=sumproduct of (AGMT_PRTY_RSK_ALCN_PCT, BASE_MI_HC"
 ln_mi_co_prty_role_id,ln_dim
 ln_aqsn_prd,ln_dim
@@ -24,6 +24,5 @@ ratings_assessments_mi_fnma,"qry='MortgageInsuranceCompanyIdentifier', 'ParentCh
 mi_company_name_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode', FHFAMIRating'"
 mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 'BaseCaseMIHaircutRatingsMultiplier'"
 effective_crt_term_factor_amort_term,qry
-effective_crt_term_factor_loan_age,"qry=effective_crt_term_factor_amort_term, but MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
+effective_crt_term_factor_loan_age,"qry=effective_crt_term_factor_amort_term with MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
 effective_crt_term_factor_ce_term,"qry=effective_crt_term_factor_loan_age but uses other query"
-
