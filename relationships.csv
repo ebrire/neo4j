@@ -1,12 +1,17 @@
 source,target
+edc,fhfa_edc
+edc,edc_adj_ratio
+edc,ln_fhfa_edcst_with_fe_crxf_rt
 fhfa_edc,ln_fhfa_expd_dflt_cost_rt
 fhfa_edc,ce_catg_typ
 fhfa_edc,edc_with_mi_haircut
 edc_with_mi_haircut,ce_loss_mul
 edc_with_mi_haircut,ce_edc_hc
+ce_edc_hc,ce_countr_prty_rtg_val
 edc_with_mi_haircut,edc_after_mul
 edc_with_mi_haircut,edc_mi_loss
 edc_with_mi_haircut,edc_hc_final
+edc_hc_final,ln_expd_dflt_cost_hrct_pct
 edc_hc_final,edc_hc_epmi
 edc_hc_epmi,reinsurer_name
 edc_hc_epmi,allocation_pct
