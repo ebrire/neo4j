@@ -16,7 +16,7 @@ base_edc_grid,"qry='PortfolioBorrowerGroupOriginationMinimumCreditScoreCategoryT
 non_mi_multiplier,"ln_dly_calc_fact.ln_calc_mlpr_fctr"
 edc_hc_epmi,qry
 deal_id,dl_grp_sbu_prty_fact.deal_id
-reinsurer_name,dl_grp_sbu_prty_fact.prty_sub_bus_unt_full_nme
+reinsurer_name,qry=dl_grp_sbu_prty_fact.prty_sub_bus_unt_full_nme
 allocation_pct,dl_grp_sbu_prty_fact.agmt_prty_rsk_alcn_pct
 reinsurer_rating,"qry=PortfolioLoanMortgageInsuranceCompanyPartyRatingCode' , FHFAReinsurerRating'"
 base_case_mi_haircuts,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, BaseCaseMIHaircutRatingsMultiplier'"
