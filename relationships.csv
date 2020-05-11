@@ -22,3 +22,6 @@ edc_hc,mi_rating_edc_hc
 mi_rating_edc_hc,mi_company_name_edc_hc
 base_case_mi_haircuts,reinsurer_rating
 edc_hc,ratings_assessments_mi_fnma
+ce_loss_mul,effective_crt_term_factor_amort_term
+ce_loss_mul,effective_crt_term_factor_loan_age
+ce_loss_mul,effective_crt_term_factor_ce_term
