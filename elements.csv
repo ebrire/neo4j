@@ -26,3 +26,4 @@ mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 
 effective_crt_term_factor_amort_term,qry
 effective_crt_term_factor_loan_age,"qry=effective_crt_term_factor_amort_term, but MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
 effective_crt_term_factor_ce_term,"qry=effective_crt_term_factor_loan_age but uses other query"
+
