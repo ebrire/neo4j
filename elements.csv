@@ -1,11 +1,14 @@
 name,source
+edc,"qry=fhfa_edc * (1 – edc_adj_ratio)"
+ln_fhfa_edcst_with_fe_crxf_rt,"qry=ln_dly_calc_fact.ln_fhfa_expd_dflt_cost_rt * (1- ln_dly_calc_fact. ln_el_bnft_to_el_rto_rt)"
 fhfa_edc,qry
-ln_fhfa_expd_dflt_cost_rt,ln_dly_calc_fact
+ln_fhfa_expd_dflt_cost_rt,"qry=ln_dly_calc_fact, CASE/WHEN expression"
 ce_catg_typ,dl_grp_dim
 edc_with_mi_haircut,"qry=edc_after_mul * (1-((1-edc_mi_loss) * (1-edc_hc_final)))"
 edc_after_mul,"qry=base_edc * Non_MI_Multiplier"
 edc_mi_loss,"ln_grid_val_fact.ln_mi_mlpr_fctr"
-edc_hc_final,"ln_dly_calc_fact.ln_expd_dflt_cost_hrct_pct"
+edc_hc_final,"qry=based on ln_dly_calc_fact.ln_expd_dflt_cost_hrct_pct"
+ln_expd_dflt_cost_hrct_pct,ln_dly_calc_fact
 ce_loss_mul,qry
 ce_edc_hc,qry
 base_edc,qry
@@ -26,3 +29,5 @@ mi_rating_edc_hc,"qry='PortfolioLoanMortgageInsuranceCompanyPartyRatingCode’, 
 effective_crt_term_factor_amort_term,qry
 effective_crt_term_factor_loan_age,"qry=effective_crt_term_factor_amort_term with MIN(ln_dim.ln_amrt_term , ln_dim. ln_aqsn_age_mths_cnt)"
 effective_crt_term_factor_ce_term,"qry=effective_crt_term_factor_loan_age but uses other query"
+ce_countr_prty_rtg_val,qry
+edc_adj_ratio,qry
